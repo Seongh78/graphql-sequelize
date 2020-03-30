@@ -1,0 +1,29 @@
+{
+  "development": {
+    "username": "kimseonghun",
+    "password": null,
+    "database": "wehagotv",
+    "host": "127.0.0.1",
+    "dialect": "postgresql",
+    "operatorsAliases": false,
+    "port": "5555"
+  },
+  "test": {
+    "username": "kimseonghun",
+    "password": null,
+    "database": "wehagotv",
+    "host": "127.0.0.1",
+    "dialect": "postgresql",
+    "operatorsAliases": false,
+    "port": "5555"
+  },
+  "production": {
+    "username": "kimseonghun",
+    "password": null,
+    "database": "wehagotv",
+    "host": "127.0.0.1",
+    "dialect": "postgresql",
+    "operatorsAliases": false,
+    "port": "5555"
+  }
+}
