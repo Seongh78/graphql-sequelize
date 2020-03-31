@@ -1,6 +1,17 @@
 import { GraphQLServer } from 'graphql-yoga';
 // ... or using `require()`
 // const { GraphQLServer } = require('graphql-yoga')
+const models = require('./models');
+
+/* Sequelize init */
+models.sequelize
+  .sync()
+  .then(() => {
+    console.log('Sequelize Success');
+  })
+  .catch(err => {
+    console.log('Sequelize Error : ', err);
+  });
 
 const typeDefs = `
   type Query {
