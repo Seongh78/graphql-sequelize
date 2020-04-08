@@ -1,11 +1,11 @@
 {
   "development": {
-    "username": "kimseonghun",
+    "username": "root",
     "password": null,
-    "database": "wehagotv",
+    "database": "mydb",
     "host": "127.0.0.1",
-    "dialect": "postgresql",
-    "port": "5555"
+    "dialect": "mysql",
+    "port": "3306"
   },
   "test": {
     "username": "kimseonghun",
