@@ -16,12 +16,31 @@ models.sequelize
 const typeDefs = `
   type Query {
     hello(name: String): String!
+    join: Boolean!
   }
 `;
 
 const resolvers = {
   Query: {
-    hello: (_, { name }) => `Hello ${name || 'World'}`
+    hello: (_, { name }) => {
+      models.Vod.findOne({ where: { id: 'ck8gv93q1001a07712ye6oxsf' } }).then(
+        result => {
+          console.log(result);
+        }
+      );
+      console.log('models.Vod: ');
+      return `Hello ${name || 'World'}`;
+    },
+
+    join: (_, __) => {
+      models.Live.findAll({
+        // where: { id: 'ck8gv93q1001a07712ye6oxsf' },
+        include: ['Vod']
+      }).then(result => {
+        console.log(result);
+      });
+      return true;
+    }
   }
 };
 

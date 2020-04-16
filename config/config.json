@@ -1,5 +1,21 @@
 {
   "development": {
+    "username": "kimseonghun",
+    "password": null,
+    "database": "wetv",
+    "host": "127.0.0.1",
+    "dialect": "postgresql",
+    "port": "5555"
+  },
+  "development2": {
+    "username": "kimseonghun",
+    "password": null,
+    "database": "wehagotv",
+    "host": "127.0.0.1",
+    "dialect": "postgresql",
+    "port": "5555"
+  },
+  "mysql": {
     "username": "root",
     "password": null,
     "database": "mydb",
